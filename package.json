@@ -1,0 +1,19 @@
+{
+  "name": "HelloArCorePlugin",
+  "version": "1.0.0",
+  "description": "Augmented Reality Plugin",
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "João Carraca",
+  "license": "Apache-2.0",
+  "cordova": {
+    "id": "HelloArCorePlugin",
+    "platforms": [
+      "android"
+    ]
+  },
+  "devDependencies": {
+    "cordova-android": "^9.0.0"
+  }
+}
