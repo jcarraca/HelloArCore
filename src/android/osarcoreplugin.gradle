@@ -1,4 +1,4 @@
-cdvCompileSdkVersion = 28
+cdvCompileSdkVersion = 26
 
 repositories{
   jcenter()
@@ -31,7 +31,7 @@ android {
         // AR Optional apps must declare minSdkVersion >= 14.
         // AR Required apps must declare minSdkVersion >= 24.
         minSdkVersion 24
-        targetSdkVersion 28
+        targetSdkVersion 26
         versionCode 1
         versionName '1.0'
     }
