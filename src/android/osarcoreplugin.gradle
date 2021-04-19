@@ -1,7 +1,7 @@
-cdvCompileSdkVersion = 28
+cdvCompileSdkVersion = 30
 
 repositories{
-  google()
+  jcenter()
   flatDir{
       dirs 'libs'
    }
@@ -25,14 +25,14 @@ dependencies {
 }
 
 android {
-  compileSdkVersion 28
+  compileSdkVersion 30
     defaultConfig {
         applicationId "com.outsystems.ar.core.HelloArCorePlugin"
 
         // AR Optional apps must declare minSdkVersion >= 14.
         // AR Required apps must declare minSdkVersion >= 24.
         minSdkVersion 24
-        targetSdkVersion 28
+        targetSdkVersion 30
         versionCode 1
         versionName '1.0'
     }
