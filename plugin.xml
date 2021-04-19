@@ -19,6 +19,8 @@
 
     <!-- android -->
     <platform name="android">
+	
+		<preference name="android-targetSdkVersion" value="29" />
 
         <config-file target="config.xml" parent="/*">
             <feature name="HelloArCorePlugin">
