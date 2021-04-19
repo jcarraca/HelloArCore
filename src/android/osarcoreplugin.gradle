@@ -1,6 +1,7 @@
 cdvCompileSdkVersion = 29
 
 repositories{
+  google()
   jcenter()
   flatDir{
       dirs 'libs'
@@ -22,6 +23,8 @@ dependencies {
 
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'com.google.android.material:material:1.1.0'
+	
+	classpath 'com.android.tools.build:gradle:3.6.0'
 }
 
 android {
