@@ -77,6 +77,7 @@
 
         <!-- Gradle script -->
         <framework src="src/android/osarcoreplugin.gradle" custom="true" type="gradleReference"/>
+		<framework src="androidx.appcompat:appcompat:1.0.0" />
 
         <!-- Copy Resources -->
         <resource-file src="res/drawable-xxhdpi/ic_launcher.png" target="res/drawable-xxhdpi/ic_launcher.png" />
