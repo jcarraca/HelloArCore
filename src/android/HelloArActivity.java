@@ -16,7 +16,6 @@
 
 package com.outsystems.ar.core;
 
-import com.outsystems.ar.core.R;
 import android.content.DialogInterface;
 import android.content.res.Resources;
 import android.media.Image;
