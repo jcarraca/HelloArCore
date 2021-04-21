@@ -76,6 +76,30 @@
         <source-file src="src/android/rendering/SpecularCubemapFilter.java" target-dir="src/com/outsystems/ar/core/rendering" />
         <source-file src="src/android/rendering/Texture.java" target-dir="src/com/outsystems/ar/core/rendering" />
 		<source-file src="src/android/rendering/VertexBuffer.java" target-dir="src/com/outsystems/ar/core/rendering" />
+		
+		<!-- Assets -->
+		<source-file src="assets/models/dfg.raw" target-dir="www/models" />
+		<source-file src="assets/models/pawn.obj" target-dir="www/models" />
+		<source-file src="assets/models/pawn_albedo.png" target-dir="www/models" />
+		<source-file src="assets/models/pawn_roughness_metallic_ao.png" target-dir="www/models" />
+		<source-file src="assets/models/trigrid.png" target-dir="www/models" />
+		
+		<source-file src="assets/shaders/ambient_intensity.frag" target-dir="www/shaders" />
+		<source-file src="assets/shaders/ambient_intensity.vert" target-dir="www/shaders" />
+		<source-file src="assets/shaders/background_show_camera.vert" target-dir="www/shaders" />
+		<source-file src="assets/shaders/background_show_camera.frag" target-dir="www/shaders" />
+		<source-file src="assets/shaders/background_show_depth_color_visualization.frag" target-dir="www/shaders" />
+		<source-file src="assets/shaders/background_show_depth_color_visualization.vert" target-dir="www/shaders" />
+		<source-file src="assets/shaders/cubemap_filter.frag" target-dir="www/shaders" />
+		<source-file src="assets/shaders/cubemap_filter.vert" target-dir="www/shaders" />
+		<source-file src="assets/shaders/environmental_hdr.vert" target-dir="www/shaders" />
+		<source-file src="assets/shaders/environmental_hdr.frag" target-dir="www/shaders" />
+		<source-file src="assets/shaders/occlusion.frag" target-dir="www/shaders" />
+		<source-file src="assets/shaders/occlusion.vert" target-dir="www/shaders" />
+		<source-file src="assets/shaders/plane.vert" target-dir="www/shaders" />
+		<source-file src="assets/shaders/plane.frag" target-dir="www/shaders" />
+		<source-file src="assets/shaders/point_cloud.frag" target-dir="www/shaders" />
+		<source-file src="assets/shaders/point_cloud.vert" target-dir="www/shaders" />
 
         <!-- Gradle script -->
         <framework src="src/android/osarcoreplugin.gradle" custom="true" type="gradleReference"/>
