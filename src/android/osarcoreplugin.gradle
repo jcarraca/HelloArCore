@@ -1,14 +1,6 @@
-cdvCompileSdkVersion = 30
-
 repositories{
   jcenter()
-  flatDir{
-      dirs 'libs'
-   }
-   maven {
-      url 'https://maven.google.com/'
-      name 'Google'
-  }
+  google()
 }
 
 dependencies {
@@ -34,15 +26,5 @@ android {
 		
         versionCode 1
         versionName '1.0'
-    }
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
-    }
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-        }
     }
 }
