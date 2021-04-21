@@ -359,7 +359,7 @@ public class HelloArActivity extends AppCompatActivity implements SampleRender.R
 
       ByteBuffer buffer =
           ByteBuffer.allocateDirect(dfgResolution * dfgResolution * dfgChannels * halfFloatSize);
-      try (InputStream is = getAssets().open("www/models/dfg.raw")) {
+      try (InputStream is = getAssets().open("dfg.raw")) {
         is.read(buffer.array());
       }
       // SampleRender abstraction leaks here.
@@ -380,7 +380,7 @@ public class HelloArActivity extends AppCompatActivity implements SampleRender.R
       // Point cloud
       pointCloudShader =
           Shader.createFromAssets(
-                  render, "www/shaders/point_cloud.vert", "www/shaders/point_cloud.frag", /*defines=*/ null)
+                  render, "point_cloud.vert", "point_cloud.frag", /*defines=*/ null)
               .setVec4(
                   "u_Color", new float[] {31.0f / 255.0f, 188.0f / 255.0f, 210.0f / 255.0f, 1.0f})
               .setFloat("u_PointSize", 5.0f);
@@ -396,21 +396,21 @@ public class HelloArActivity extends AppCompatActivity implements SampleRender.R
       Texture virtualObjectAlbedoTexture =
           Texture.createFromAsset(
               render,
-              "www/models/pawn_albedo.png",
+              "pawn_albedo.png",
               Texture.WrapMode.CLAMP_TO_EDGE,
               Texture.ColorFormat.SRGB);
       Texture virtualObjectPbrTexture =
           Texture.createFromAsset(
               render,
-              "www/models/pawn_roughness_metallic_ao.png",
+              "pawn_roughness_metallic_ao.png",
               Texture.WrapMode.CLAMP_TO_EDGE,
               Texture.ColorFormat.LINEAR);
-      virtualObjectMesh = Mesh.createFromAsset(render, "www/models/pawn.obj");
+      virtualObjectMesh = Mesh.createFromAsset(render, "pawn.obj");
       virtualObjectShader =
           Shader.createFromAssets(
                   render,
-                  "www/shaders/environmental_hdr.vert",
-                  "www/shaders/environmental_hdr.frag",
+                  "environmental_hdr.vert",
+                  "environmental_hdr.frag",
                   /*defines=*/ new HashMap<String, String>() {
                     {
                       put(

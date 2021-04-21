@@ -353,7 +353,7 @@ public class SpecularCubemapFilter implements Closeable {
       // Create the shader and populate its uniforms with the importance sample cache entries.
       shaders[chunk.chunkIndex] =
           Shader.createFromAssets(
-                  render, "www/shaders/cubemap_filter.vert", "www/shaders/cubemap_filter.frag", defines)
+                  render, "cubemap_filter.vert", "cubemap_filter.frag", defines)
               .setTexture("u_Cubemap", radianceCubemap)
               .setDepthTest(false)
               .setDepthWrite(false);
