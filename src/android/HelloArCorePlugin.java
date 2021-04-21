@@ -19,9 +19,8 @@ public class HelloArCorePlugin extends CordovaPlugin {
 
 	@Override
 	public boolean execute(final String action, final CordovaArgs args, final CallbackContext callbackContext) throws JSONException {
-		System.out.println("Entrei aqui");
 		Intent intent = new Intent(ctx, HelloArActivity.class);
-		
+		intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		ctx.startActivity(intent);
 		return true;
 	}
