@@ -27,12 +27,11 @@ dependencies {
 android {
   compileSdkVersion 30
     defaultConfig {
-        applicationId "com.outsystems.ar.core.HelloArCorePlugin"
+        
 
-        // AR Optional apps must declare minSdkVersion >= 14.
-        // AR Required apps must declare minSdkVersion >= 24.
         minSdkVersion 24
         targetSdkVersion 30
+		
         versionCode 1
         versionName '1.0'
     }
