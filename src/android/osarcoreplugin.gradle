@@ -27,7 +27,7 @@ dependencies {
 android {
   compileSdkVersion 30
     defaultConfig {
-        
+        applicationId "com.outsystems.ar.core"
 
         minSdkVersion 24
         targetSdkVersion 30
